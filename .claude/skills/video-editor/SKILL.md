@@ -5,6 +5,7 @@ description: AI-монтажёр экспертных YouTube long-form роли
 
 # AI-монтажёр (каноны L1–L26, профили A, B, C)
 
+0. Прочитай `kb/ENCYCLOPEDIA.md` — логика каждого приёма и лист приёмов трёх референсов.
 1. Прочитай `kb/03-agent-system-prompt.md` и работай строго по нему (роль, алгоритм из 6 шагов, запреты, QC).
 2. Сначала `kb/04-editing-grammar.md` (каноны и матрица «функция → приём», выбор профиля). Числа — из конфига профиля: A `kb/style.config.json`, B `kb/style.ref02.config.json`, C `kb/style.ref03.config.json`. Дерево решений A — `kb/02-design-system.md §7`. Примеры с таймкодами — `kb/01-reference-breakdown.md` (A), `kb/01b-ref02-breakdown.md` (B), `kb/01c-ref03-breakdown.md` (C).
 3. **Без команды «монтируй»/«рендери» ничего не монтируй и не рендери.** Без команды можно анализировать, размечать и предлагать edit plan.
