@@ -1,57 +1,57 @@
-t,technique,word,function,note
-0.67,TITLE_KINETIC,топливо,thesis_keyword,"ТОПЛИВО + 3D-молния; ЛЮБОГО; script «бизнеса»"
-0.83,ZOOM_PUSH,топливо,hook_emphasis,1.00->1.284 25f
-0.94,MUSIC_IN,топливо,hook_emphasis,бит 140 BPM входит
-2.236,TR_RING,без,block_end,хук -> тело
-5.072,TR_ZOOMBLUR,тебе,enter_illustration,-> серая студия
-5.6,SCENE_GREY_ILLUSTRATION,предлагать,enumeration,3 силуэта накопительно
-11.111,TR_RING,поэтому,block_end,связка «поэтому»
-13.38,CUT_PUNCH_IN,бюджеты,term,1.00->1.20
-13.45,TITLE_KINETIC,бюджеты,term,БЮДЖЕТЫ / НА РЕКЛАМУ (зелёный)
-14.58,TR_XSTAMP,таргеты,negation,-> тёмная сетка
-14.7,SCENE_DARK_CHART,таргеты,enumeration_growth,5 растущих столбиков
-17.818,TR_ZOOMBLUR,либо,exit_illustration,-> спикер 1.20
-20.12,TR_ZOOMBLUR,однако,contrast,-> серая студия
-20.3,SCENE_GREY_COMPARE,первый,comparison_fail,2 варианта + CRITICAL ERROR
-22.69,TR_XSTAMP,есть,negation,закрывает блок ошибок
-23.49,ZOOM_PUSH,эффективнее,promise,1.00->1.278 23f
-24.291,CUT_PUNCH_IN,котором,rhythm,1.00->1.20
-26.159,CUT_PUNCH_OUT,каждый,rhythm,1.20->1.00
-28.26,ICON_POP,телеграм,brand_enumeration,Telegram/MAX/VK/WhatsApp
-31.03,ZOOM_PUSH,тысячи,scale_number,1.00->1.291 29f
-33.066,CUT_HARD,кто,examples,-> серая студия
-33.23,SCENE_GREY_CARDS,автомобиль,examples,карусель 3 карточек
-39.84,CUT_HARD,кто,exit_illustration,-> спикер 1.00
-39.94,TITLE_KINETIC,кто,enumeration,mind-map КТО-ТО / юридическое / IT
-43.043,TR_RING,тысячи,block_end,
-45.913,TR_XSTAMP,мол,enter_quote,-> тёмная сетка
-45.97,SCENE_DARK_QUOTE,мол,direct_speech,красные слова по центру
-49.983,TR_ZOOMBLUR,понимаешь,address_viewer,-> спикер
-51.32,ZOOM_PUSH,холодная,negation,«не холодная аудитория»
-52.6,ICON_POP,люди,enumeration,люди / компании
-53.35,ZOOM_PULL,компании,make_room,1.225->1.003 34f
-54.9,TITLE_KINETIC,четкая,key_concept,ЧЁТКАЯ / потребность (зелёный script)
-56.056,TR_RING,они,block_end,
-60.527,CUT_PUNCH_IN,и,rhythm,1.00->1.20
-62.596,CUT_PUNCH_OUT,однако,contrast,1.20->1.00
-66.13,TITLE_KINETIC,тысячам,scale_number,ПО ТЫСЯЧАМ / РАЗЛИЧНЫХ / чатов (жёлтый)
-66.2,ZOOM_PUSH,тысячам,scale_number,1.00->1.290 28f
-67.968,TR_RING,бизнес,enter_illustration,вариант B: пастельный film burn
-68.1,SCENE_GREY_ILLUSTRATION,бизнес,enumeration,5 иконок-типов чатов с подписями
-73.674,TR_RING,чтобы,block_end,
-75.51,ZOOM_PUSH,сотрудников,emphasis,1.00->1.284 25f
-77.48,ZOOM_PULL,днями,release,1.238->1.003 36f
-82.75,GRADE_BW,но,opinion_negative,ч/б до 96.20
-86.05,ZOOM_PUSH,садила,emphasis,1.00->1.285 26f
-88.59,TR_ZOOMBLUR,потому,enter_illustration,-> серая студия (ч/б режим)
-89.0,SCENE_GREY_CARDS,отвлекся,consequences,мем-карточки + распад в пыль
-96.2,TR_RING,теперь,pivot_solution,вариант B: розово-красный leak; возврат цвета
-98.7,ICON_DRAW,24,feature,круговая стрелка + «24»
-104.97,TR_ZOOMBLUR,по,enter_mascot,-> тёмная сетка
-104.97,SCENE_DARK_MASCOT,ключевому,process,утка-талисман + белые слова по центру
-113.146,TR_ZOOMBLUR,после,exit_illustration,-> спикер 1.28->1.00
-118.39,CUT_PUNCH_IN,наш,product_name,1.00->1.20
-118.5,TITLE_KINETIC,наш,product_name,3D-огонь + НАШ / лидоген (оранжевый script)
-119.25,TR_RING,давай,block_end,
-120.85,TR_XSTAMP,вот,enter_demo,-> спикер слева + UI справа
-120.88,SPLIT_UI,вот,demo,скринкаст Telegram Parser справа
+t,technique,word,function,note,t_end
+0.67,TITLE_KINETIC,топливо,thesis_keyword,ТОПЛИВО + 3D-молния; ЛЮБОГО; script «бизнеса»,
+0.83,ZOOM_PUSH,топливо,hook_emphasis,1.00->1.284 25f,
+0.94,MUSIC_IN,топливо,hook_emphasis,бит 140 BPM входит,
+2.236,TR_RING,без,block_end,хук -> тело,
+5.072,TR_ZOOMBLUR,тебе,enter_illustration,-> серая студия,
+5.072,SCENE_GREY_ILLUSTRATION,предлагать,enumeration,3 силуэта накопительно,11.111
+11.111,TR_RING,поэтому,block_end,связка «поэтому»,
+13.38,CUT_PUNCH_IN,бюджеты,term,1.00->1.20,
+13.45,TITLE_KINETIC,бюджеты,term,БЮДЖЕТЫ / НА РЕКЛАМУ (зелёный),
+14.58,TR_XSTAMP,таргеты,negation,-> тёмная сетка,
+14.581,SCENE_DARK_CHART,таргеты,enumeration_growth,5 растущих столбиков,17.818
+17.818,TR_ZOOMBLUR,либо,exit_illustration,-> спикер 1.20,
+20.12,TR_ZOOMBLUR,однако,contrast,-> серая студия,
+20.12,SCENE_GREY_COMPARE,первый,comparison_fail,2 варианта + CRITICAL ERROR,22.69
+22.69,TR_XSTAMP,есть,negation,закрывает блок ошибок,
+23.49,ZOOM_PUSH,эффективнее,promise,1.00->1.278 23f,
+24.291,CUT_PUNCH_IN,котором,rhythm,1.00->1.20,
+26.159,CUT_PUNCH_OUT,каждый,rhythm,1.20->1.00,
+28.26,ICON_POP,телеграм,brand_enumeration,Telegram/MAX/VK/WhatsApp,
+31.03,ZOOM_PUSH,тысячи,scale_number,1.00->1.291 29f,
+33.066,CUT_HARD,кто,examples,-> серая студия,
+33.066,SCENE_GREY_CARDS,автомобиль,examples,карусель 3 карточек,39.84
+39.84,CUT_HARD,кто,exit_illustration,-> спикер 1.00,
+39.94,TITLE_KINETIC,кто,enumeration,mind-map КТО-ТО / юридическое / IT,
+43.043,TR_RING,тысячи,block_end,,
+45.913,TR_XSTAMP,мол,enter_quote,-> тёмная сетка,
+45.913,SCENE_DARK_QUOTE,мол,direct_speech,красные слова по центру,49.983
+49.983,TR_ZOOMBLUR,понимаешь,address_viewer,-> спикер,
+51.32,ZOOM_PUSH,холодная,negation,«не холодная аудитория»,
+52.6,ICON_POP,люди,enumeration,люди / компании,
+53.35,ZOOM_PULL,компании,make_room,1.225->1.003 34f,
+54.9,TITLE_KINETIC,четкая,key_concept,ЧЁТКАЯ / потребность (зелёный script),
+56.056,TR_RING,они,block_end,,
+60.527,CUT_PUNCH_IN,и,rhythm,1.00->1.20,
+62.596,CUT_PUNCH_OUT,однако,contrast,1.20->1.00,
+66.13,TITLE_KINETIC,тысячам,scale_number,ПО ТЫСЯЧАМ / РАЗЛИЧНЫХ / чатов (жёлтый),
+66.2,ZOOM_PUSH,тысячам,scale_number,1.00->1.290 28f,
+67.968,TR_RING,бизнес,enter_illustration,вариант B: пастельный film burn,
+67.968,SCENE_GREY_ILLUSTRATION,бизнес,enumeration,5 иконок-типов чатов с подписями,73.674
+73.674,TR_RING,чтобы,block_end,,
+75.51,ZOOM_PUSH,сотрудников,emphasis,1.00->1.284 25f,
+77.48,ZOOM_PULL,днями,release,1.238->1.003 36f,
+82.75,GRADE_BW,но,opinion_negative,ч/б до 96.20,
+86.05,ZOOM_PUSH,садила,emphasis,1.00->1.285 26f,
+88.59,TR_ZOOMBLUR,потому,enter_illustration,-> серая студия (ч/б режим),
+88.59,SCENE_GREY_CARDS,отвлекся,consequences,мем-карточки + распад в пыль,96.2
+96.2,TR_RING,теперь,pivot_solution,вариант B: розово-красный leak; возврат цвета,
+98.7,ICON_DRAW,24,feature,круговая стрелка + «24»,
+104.97,TR_ZOOMBLUR,по,enter_mascot,-> тёмная сетка,
+104.97,SCENE_DARK_MASCOT,ключевому,process,утка-талисман + белые слова по центру,113.146
+113.146,TR_ZOOMBLUR,после,exit_illustration,-> спикер 1.28->1.00,
+118.39,CUT_PUNCH_IN,наш,product_name,1.00->1.20,
+118.5,TITLE_KINETIC,наш,product_name,3D-огонь + НАШ / лидоген (оранжевый script),
+119.25,TR_RING,давай,block_end,,
+120.85,TR_XSTAMP,вот,enter_demo,-> спикер слева + UI справа,
+120.88,SPLIT_UI,вот,demo,скринкаст Telegram Parser справа,

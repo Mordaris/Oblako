@@ -16,9 +16,9 @@ from pathlib import Path
 import numpy as np
 import sherpa_onnx
 
+from refcfg import OUT, SRC
+
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "reference" / "ref01.mp4"
-OUT = ROOT / "analysis"
 MODELS = Path("/home/user/models")
 REL = "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models"
 GIGA = "sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19"

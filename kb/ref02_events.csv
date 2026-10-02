@@ -1,0 +1,95 @@
+t,technique,word,function,note,t_end
+2.6,EMOJI_STACK,казах,enumeration,3D-эмодзи людей копятся слева + флаг справа сменяется; вспышка за каждым,
+5.0,ZOOM_PUSH,человек,accent_peak,1.00->1.20 26f ease-in-out,
+7.167,CUT_HARD,в,metaphor,чёрный фон + 3D-часы «В ДЕНЬ»,10.3
+7.867,BROLL_FULL,зарплаты,illustration,банкомат + «ЗАРПЛАТЫ?» крупно,
+8.6,TR_SILHOUETTE,куда,transition,силуэт спикера проходит через кадр,
+8.767,ROTO_BLACK,куда,question,спикер вырезан на чёрном + «КУДА деваются» печать + «?» + 3D деньги с крыльями,
+10.3,CUT_HARD,в,exit_illustration,-> спикер 1.00,
+11.55,ICON_POP,бразилия,comparison,флаг-карта Бразилии справа,
+12.2,ICON_POP,турция,comparison,флаг-карта Турции слева,
+13.1,TR_FLASH,у,block_end,белая вспышка-засвет на склейке,
+13.3,PIP_IMAGE,таблица,illustration,скрин таблицы Менделеева въезжает слева,
+14.0,KEYWORD_CAPTION,вся,term,«ВСЯ / ТАБЛИЦА / МЕНДЕЛЕЕВА» внизу по слову,
+15.067,BROLL_FULL,мы,illustration,таймлапс ночного Алматы,17.767
+16.4,TR_WIPE,урана,transition,диагональный слайд-вайп -> нефтекачалка,
+17.767,TV_WALL,по,metaphor,стена ТВ: спикер внутри ТВ «по новостям»,19.0
+17.85,ZOOM_PULL,говорят,release,0.60->1.00 35f выход из ТВ на весь кадр,
+20.067,CUT_PUNCH_IN,казалось,irony,1.00->1.27,
+21.5,TR_FLASH,но,contrast,красно-оранжевый light leak; склейка 21.63 на «но вот»,
+21.633,CUT_PUNCH_OUT,но,contrast,-> 1.00,
+22.9,PIP_IMAGE,заставляет,illustration,B-roll: мужчина кусает ногти (окно слева-вверху),
+25.067,CUT_PUNCH_IN,институт,source,1.00->1.19,
+25.3,PIP_IMAGE,гэлопа,source,логотип GALLUP слева-вверху,
+26.167,CUT_PUNCH_OUT,они,rhythm,-> 1.00,
+27.2,TR_DISSOLVE,публикуют,transition,растворение в скринкаст сайта,
+27.333,SCREEN_DOC,публикуют,evidence,скрины отчёта Gallup 0.2–0.7 с каждый,35.033
+29.6,TR_WHIP,казахстан,transition,стрик-блюр -> таблица стран,
+31.0,SPOTLIGHT_ROW,казахстан,evidence,затемнение таблицы кроме строк Kazakhstan/Ethiopia/Nigeria,
+35.033,CUT_PUNCH_IN,экономического,term,1.00->1.30,
+35.1,TITLE_GIANT,экономического,term,«ЭКОНОМИЧЕСКОГО» сверху на всю ширину + «ОТЧАЯНИЯ» внизу печать,
+36.767,BROLL_FULL,сыпят,irony,бизнесмен с графиком роста,39.267
+39.267,CUT_HARD,очень,exit_illustration,-> спикер 1.00,
+39.3,PIP_IMAGE,крутые,evidence,газетная вырезка «Kazakhstan enters top 50»,
+40.2,PIP_IMAGE,зарабатываем,evidence,таблица ECI справа; оба уходят «смятым комком» 41.5,
+42.033,CUT_PUNCH_IN,но,contrast,1.00->1.27,
+45.0,BROLL_FULL,экономически,illustration,монеты в ладони,48.867
+47.0,TR_WHIP,как,transition,горизонтальный whip,
+47.067,BROLL_FULL,показывают,metaphor,ИИ-картинка: ТВ с идиллией на фоне руин,
+48.867,CUT_HARD,в,exit_illustration,-> спикер 1.00,
+54.2,PIP_IMAGE,люди,enumeration,карикатура «чиновники с мешками» слева,
+54.8,PIP_IMAGE,обман,enumeration,рукопожатие с деньгами справа,
+58.2,TR_DISSOLVE,больше,emotional,медленное растворение 12f,
+58.47,BROLL_FULL,больше,emotional,ночь: человек не спит + центр. текст по словам,63.27
+59.0,TEXT_CENTER,больше,statistic,«Больше половины взрослых в Казахстане просыпаются с одной мыслью»,
+63.27,QUOTE_BLACK,мне,direct_speech,чёрный фон: «Мне / страшно / за своё / будущее» RGB-split,66.2
+65.9,TR_WIPE,я,exit_illustration,чёрный кадр уезжает влево -> спикер,
+70.4,SPLIT_SOCIAL,дом,enumeration,колонка вертикальных видео: дом/машина/путешествия,
+73.3,ZOOM_PUSH,чувство,accent_peak,1.00->1.17 17f,
+77.8,ANIM_2D,долги,metaphor,красный фон: мешок DEBT + кирпичи-кредиты,80.233
+80.233,CUT_HARD,поэтому,exit_illustration,-> спикер 1.00,
+82.9,ZOOM_PUSH,это,accent_peak,1.00->1.13 17f,
+83.0,TITLE_GIANT,это,thesis,«ЭТО РЕАЛЬНОЕ / НАСТРОЕНИЕ / ЛЮДЕЙ»,
+84.567,CUT_RAPID,реальный,thesis,3 склейки по 0.53 с: 1.13 / 1.13 / 1.27 «это реальный диагноз»,
+85.633,SIDE_TITLES,вскрыть,topic,«РАЗБОР | СИСТЕМЫ» слайдом с краёв,
+88.2,MAP_3D,хорошо,irony,3D-карта + «У НАС ВСЁ ХОРОШО!» + 👍,90.533
+90.4,TR_ZOOMBLUR,но,exit_illustration,влёт в карту -> спикер,
+94.9,CUT_PUNCH_IN,мы,promise,1.00->1.28 «мы разберёмся почему»,
+97.567,CUT_PUNCH_OUT,мы,rhythm,-> 1.00,
+97.75,PIP_IMAGE,одна,evidence,карта СССР с ВВП на душу,
+100.3,INFOGRAPHIC,наше,metaphor,спидометр «уровень тревожности» стрелка мечется,
+102.6,BROLL_FULL,пристегнитесь,metaphor,пристёгивание ремня (буквально),105.133
+105.133,CUT_HARD,ещё,exit_illustration,-> спикер 1.00,
+111.367,CUT_PUNCH_IN,и,promise,1.00->1.26 «моя миссия»,
+115.5,CUT_PUNCH_OUT,так,rhythm,-> 1.00,
+119.3,FADE_BLACK,поехали,chapter,затемнение 8f после «поехали»,
+119.6,CHAPTER_CARD,поехали,chapter,«Магия чисел и „Мёртвый ВВП“» + калькулятор + liquid splash; 5.8 с без речи,124.567
+124.567,CUT_HARD,если,exit_illustration,-> спикер,
+125.2,TR_FLASH,ввп,transition,белая вспышка,
+125.4,TR_PAPER,ввп,transition,рваная бумага -> 3D-карта,
+125.57,MAP_3D,ввп,statistic,карта + стикеры чисел $14 000 / +5% / 4.8%,133.267
+127.55,STAT_STICKER,четырнадцать,statistic,стикер «$14 000 на душу населения»,
+129.8,STAT_STICKER,пять,statistic,«+5% в год рост экономики» + 3D-график,
+131.0,STAT_STICKER,безработица,statistic,«4.8% уровень безработицы» с вращением,
+133.1,TR_ZOOMBLUR,если,exit_illustration,-> спикер 1.21,
+135.0,CARD_TO_FULL,окей,irony,карточка «весёлый мужчина с деньгами» снизу -> fullscreen,138.567
+137.0,PIP_IMAGE,галоп,source,GALLUP-карточка поверх,
+138.3,TR_WIPE,а,exit_illustration,слайд-вайп -> спикер,
+139.567,BROLL_FULL,интервью,illustration,уличное интервью TV NEWS,142.9
+142.8,TR_WIPE,исследование,exit_illustration,слайд-вайп -> спикер,
+145.067,YELLOW_QUOTE,пятьдесят,statistic,жёлтая плашка с курсором -> «50% населения… главной проблемой страны»,152.8
+152.6,TR_WHIP,удивительно,exit_illustration,плашка улетает с блюром,
+152.8,ZOOM_PUSH,удивительно,accent_peak,1.00->1.10 ~30f,
+153.767,OBJECT_3D,говорят,metaphor,3D-гора денег и золота на тёмной сетке,159.733
+159.6,TR_ZOOMBLUR,остальные,exit_illustration,объект улетает в камеру,
+160.867,BROLL_FULL,металлах,enumeration,нефтекачалки на закате,163.5
+163.4,TR_WIPE,промышленных,exit_illustration,слайд-вайп -> спикер,
+164.3,OBJECT_LABEL,добывающих,enumeration,золото + плашка «КОРПОРАЦИИ» справа,
+166.6,OBJECT_LABEL,квази,enumeration,золото + плашка «ГОССЕКТОР» слева,
+169.0,TR_ZOOMBLUR,и,exit_illustration,объекты улетают в камеру,
+170.3,BROLL_FULL,эффект,metaphor,ржавая труба в песке «просачивание»,172.733
+171.7,ICON_POP,не,negation,3D-эмодзи 👎,
+172.6,TR_WIPE,ввп,exit_illustration,слайд-вайп -> спикер,
+174.3,CARD_TO_FULL,бумаге,metaphor,брошенный лист -> карточка «СТАГНАЦИЯ» -> fullscreen,179.633
+176.0,ICON_POP,счетах,brand_enumeration,логотипы банков Kaspi/Halyk,
+179.5,TR_GLITCH,цены,exit_illustration,глитч + красный leak -> спикер,

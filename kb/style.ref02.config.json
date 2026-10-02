@@ -1,0 +1,403 @@
+{
+ "meta": {
+  "name": "ref02-documentary-explainer",
+  "profile": "B",
+  "source": "reference/ref02.mp4 — kb/01b-ref02-breakdown.md, kb/04-editing-grammar.md",
+  "inherits": "kb/style.config.json (всё, что не переопределено: fps, resolution, safe_zones, fonts)",
+  "units": "px — для 1920x1080; frames — при 30 fps; ms — миллисекунды",
+  "confidence_legend": {
+   "I": "измерено скриптом",
+   "G": "покадровые листы",
+   "O": "оценка",
+   "R": "рекомендация, в референсе не измерено"
+  }
+ },
+ "fps": 30,
+ "aspect_ratio": "16:9",
+ "resolution": {
+  "width": 1920,
+  "height": 1080
+ },
+ "camera": {
+  "levels": {
+   "WIDE": {
+    "scale": 1.0,
+    "conf": "I"
+   },
+   "PUNCH": {
+    "scale": 1.27,
+    "range": [
+     1.19,
+     1.3
+    ],
+    "conf": "I"
+   }
+  },
+  "push": {
+   "from": 1.0,
+   "to_range": [
+    1.13,
+    1.2
+   ],
+   "frames_range": [
+    17,
+    26
+   ],
+   "easing": [
+    0.05,
+    -0.1,
+    0.5,
+    0.95
+   ],
+   "start_offset_ms": -200,
+   "conf": "I"
+  },
+  "pull_from_tv": {
+   "from": 0.6,
+   "to": 1.0,
+   "frames": 35,
+   "easing": [
+    0.37,
+    0.15,
+    0.67,
+    0.97
+   ],
+   "conf": "I"
+  },
+  "rapid_cuts": {
+   "count": 3,
+   "shot_s": 0.53,
+   "use_when": "повтор-усиление тезиса",
+   "conf": "I"
+  },
+  "max_static_s": 6.2
+ },
+ "subtitles": {
+  "mode": "keywords_only",
+  "per_3min_text_events": [
+   8,
+   10
+  ],
+  "note": "постоянных субтитров нет"
+ },
+ "color_palette": {
+  "studio_wall": "#3173A9",
+  "chapter_text": "#F7AB19",
+  "debt_anim_bg": "#B23219",
+  "label_plate": "#16212E",
+  "map_bg": "#070C14",
+  "quote_box": "#FEDB00",
+  "quote_text": "#080000",
+  "text_primary": "#FFFFFF"
+ },
+ "typography": {
+  "KEYWORD_CAPTION": {
+   "font": "grotesk_wide",
+   "weight": 900,
+   "case": "upper",
+   "cap_height_px": 68,
+   "position": "bottom-center",
+   "words_per_card": 1,
+   "conf": "O"
+  },
+  "TITLE_GIANT": {
+   "font": "grotesk_wide",
+   "weight": 900,
+   "case": "upper",
+   "cap_height_px": 98,
+   "max_width_pct": 92,
+   "position": "top+bottom",
+   "animation": "typewriter_letters",
+   "conf": "O"
+  },
+  "SIDE_TITLES": {
+   "font": "grotesk_wide",
+   "weight": 900,
+   "case": "upper",
+   "cap_height_px": 72,
+   "position": "left+right of head",
+   "in": "slide_from_edges",
+   "frames": 18,
+   "conf": "O"
+  },
+  "TEXT_CENTER": {
+   "font": "grotesk_wide",
+   "weight": 800,
+   "case": "sentence",
+   "line_height_px": [
+    40,
+    48
+   ],
+   "max_lines": 4,
+   "animation": "fade_blur_by_word",
+   "conf": "O"
+  },
+  "QUOTE_BLACK": {
+   "font": "grotesk_wide",
+   "weight": 900,
+   "case": "lower",
+   "cap_height_px": 120,
+   "rgb_split_px": 3,
+   "in": "motion_blur_x",
+   "frames": [
+    1,
+    2
+   ],
+   "conf": "O"
+  },
+  "YELLOW_QUOTE": {
+   "box": "#FEDB00",
+   "radius_px": 45,
+   "text": "#080000",
+   "font": "grotesk",
+   "weight": 400,
+   "cursor_click_intro_frames": 18,
+   "expand_frames": 4,
+   "typewriter": "by_line_sync_speech",
+   "conf": "G"
+  },
+  "CHAPTER_CARD": {
+   "text_color": "#F7AB19",
+   "glow": "0 0 24px #F7AB19",
+   "perspective_3d": true,
+   "typewriter_letters": true,
+   "duration_s": 5,
+   "extras": [
+    "3D-объект темы",
+    "liquid splash"
+   ],
+   "exit": "fall_blur+fade_black",
+   "conf": "G"
+  },
+  "LABEL_PLATE": {
+   "bg": "#16212E",
+   "text": "#FFFFFF",
+   "weight": 900,
+   "case": "upper",
+   "accent_line": "gold",
+   "conf": "G"
+  }
+ },
+ "transitions": {
+  "TR_FLASH": {
+   "frames": 3,
+   "color": "#FFFFFF",
+   "use_when": "граница блока"
+  },
+  "TR_LEAK": {
+   "frames": [
+    5,
+    8
+   ],
+   "colors": [
+    "red-orange",
+    "pink"
+   ],
+   "blend": "screen",
+   "use_when": "граница блока, смена тона"
+  },
+  "TR_WIPE": {
+   "frames": [
+    6,
+    8
+   ],
+   "motion_blur": true,
+   "directions": [
+    "diagonal",
+    "horizontal"
+   ],
+   "use_when": "продолжение мысли, смена картинки"
+  },
+  "TR_WHIP": {
+   "frames": [
+    4,
+    6
+   ],
+   "use_when": "быстрая смена картинки внутри фразы"
+  },
+  "TR_DISSOLVE": {
+   "frames_fast": 6,
+   "frames_dramatic": 12,
+   "use_when": "драматичная статистика / уход в скринкаст"
+  },
+  "TR_ZOOMBLUR": {
+   "frames": [
+    6,
+    9
+   ],
+   "use_when": "выход из 3D-объекта/карты (объект улетает в камеру)"
+  },
+  "TR_PAPER": {
+   "frames": 6,
+   "use_when": "вход в «официальные цифры»"
+  },
+  "TR_GLITCH": {
+   "frames": [
+    4,
+    6
+   ],
+   "use_when": "конец негативного блока"
+  },
+  "TR_SILHOUETTE": {
+   "frames": [
+    5,
+    6
+   ],
+   "use_when": "вход в главный вопрос"
+  },
+  "FADE_BLACK": {
+   "frames": 8,
+   "use_when": "конец интро перед заставкой главы"
+  },
+  "cut_lead_frames": [
+   1,
+   3
+  ],
+  "beat_sync": false
+ },
+ "elements": {
+  "PIP_IMAGE": {
+   "size_pct_height": 30,
+   "position": [
+    "top-left",
+    "right"
+   ],
+   "in": {
+    "slide_from_edge_frames": [
+     6,
+     9
+    ]
+   },
+   "out": [
+    "slide_opposite",
+    "crumple_ball"
+   ],
+   "lead_ms": [
+    400,
+    900
+   ],
+   "conf": "G"
+  },
+  "STAT_STICKER": {
+   "in": "pop_overshoot",
+   "frames": 5,
+   "lead_ms": [
+    -300,
+    0
+   ],
+   "accumulate": true,
+   "conf": "G"
+  },
+  "EMOJI_STACK": {
+   "in": "pop + flash behind",
+   "lead_ms": 250,
+   "accumulate": true,
+   "exit": "fly_to_side",
+   "conf": "G"
+  },
+  "CARD_TO_FULL": {
+   "in": "card_from_bottom",
+   "grow_frames": 35,
+   "flash_on_full": true,
+   "conf": "G"
+  },
+  "SPOTLIGHT_ROW": {
+   "dim_pct": 50,
+   "row_outline": "white 2px",
+   "lag_ms": [
+    900,
+    1100
+   ],
+   "conf": "G"
+  },
+  "SCREEN_DOC": {
+   "shot_s": [
+    0.2,
+    0.7
+   ],
+   "use_when": "«изучили отчёт»",
+   "conf": "I"
+  },
+  "SPLIT_SOCIAL": {
+   "column_width_pct": 30,
+   "side": "left",
+   "conf": "G"
+  },
+  "ROTO_BLACK": {
+   "bg": "#000000",
+   "floating_question_marks": true,
+   "conf": "G"
+  }
+ },
+ "density_limits": {
+  "visual_event_interval_s": {
+   "mean": 1.9,
+   "median": 1.67
+  },
+  "graphics_share_pct": [
+   40,
+   48
+  ],
+  "hook_first_30s": {
+   "asl_s": 1.75
+  },
+  "asl_overall_s": 2.86
+ },
+ "audio": {
+  "ref_integrated_lufs": -9.8,
+  "target_integrated_lufs": -14,
+  "music_under_voice_db": [
+   -20,
+   -12
+  ],
+  "beat_sync_cuts": false,
+  "pauses_max_ms": 310,
+  "wpm_ref": 180,
+  "conf": "I/R"
+ },
+ "sfx_library_mapping": {
+  "_note": "SFX не измерены (речь сплошная). Использовать описания профиля A (kb/style.config.json), плюс:",
+  "TR_FLASH": {
+   "sound": "impact + whoosh",
+   "duration_ms": 400,
+   "level_db": -14,
+   "attack": "на склейке"
+  },
+  "PIP_CRUMPLE": {
+   "sound": "paper crumple",
+   "duration_ms": 300,
+   "level_db": -18,
+   "attack": "со стартом сминания"
+  },
+  "TR_PAPER": {
+   "sound": "paper tear",
+   "duration_ms": 350,
+   "level_db": -16,
+   "attack": "со стартом разрыва"
+  },
+  "STAT_STICKER": {
+   "sound": "pop/ding",
+   "duration_ms": 120,
+   "level_db": -16,
+   "attack": "на 1-м кадре"
+  },
+  "YELLOW_QUOTE": {
+   "sound": "mouse click + keyboard typing",
+   "duration_ms": "по длине печати",
+   "level_db": -22,
+   "attack": "клик на 1-м кадре курсора"
+  },
+  "CHAPTER_CARD": {
+   "sound": "cinematic hit + riser",
+   "duration_ms": 5000,
+   "level_db": -12,
+   "attack": "на 1-й букве"
+  },
+  "TR_GLITCH": {
+   "sound": "glitch/digital stutter",
+   "duration_ms": 250,
+   "level_db": -16,
+   "attack": "на склейке"
+  }
+ }
+}

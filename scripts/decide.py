@@ -14,6 +14,8 @@ import json
 import sys
 from pathlib import Path
 
+from refcfg import OUT
+
 ROOT = Path(__file__).resolve().parent.parent
 F = 1 / 30
 CFG = json.loads((ROOT / "kb" / "style.config.json").read_text(encoding="utf-8"))
@@ -223,8 +225,8 @@ def plan(ws):
 
 
 def main():
-    src = sys.argv[1] if len(sys.argv) > 1 else ROOT / "analysis" / "transcript.json"
-    out = sys.argv[2] if len(sys.argv) > 2 else ROOT / "analysis" / "backtest.csv"
+    src = sys.argv[1] if len(sys.argv) > 1 else OUT / "transcript.json"
+    out = sys.argv[2] if len(sys.argv) > 2 else OUT / "backtest.csv"
     ev = plan(load_words(src))
     with open(out, "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=["t", "technique", "word", "function", "note"])

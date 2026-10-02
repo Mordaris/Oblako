@@ -18,12 +18,11 @@ from pathlib import Path
 import librosa
 import numpy as np
 
+from refcfg import FPS, OUT, SRC
+
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "reference" / "ref01.mp4"
-OUT = ROOT / "analysis"
 SR = 44100
 HOP = 441  # 10 мс
-FPS = 2997 / 100
 
 
 def load():

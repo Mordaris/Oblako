@@ -11,12 +11,21 @@ import csv
 import sys
 from pathlib import Path
 
+from refcfg import EVENTS, OUT
+
 ROOT = Path(__file__).resolve().parent.parent
 TOL = 0.5
 FAM = {
     "TR_RING": "transition", "TR_ZOOMBLUR": "transition", "TR_XSTAMP": "transition", "CUT_HARD": "transition",
+    "TR_FLASH": "transition", "TR_WIPE": "transition", "TR_WHIP": "transition", "TR_DISSOLVE": "transition",
+    "TR_PAPER": "transition", "TR_GLITCH": "transition", "TR_SILHOUETTE": "transition", "FADE_BLACK": "transition",
     "ZOOM_PUSH": "camera", "ZOOM_PULL": "camera", "CUT_PUNCH_IN": "camera", "CUT_PUNCH_OUT": "camera",
-    "TITLE_KINETIC": "overlay", "ICON_POP": "overlay", "ICON_DRAW": "overlay", "MUSIC_IN": "audio",
+    "CUT_RAPID": "camera", "GRADE_BW": "camera",
+    "TITLE_KINETIC": "overlay", "ICON_POP": "overlay", "ICON_DRAW": "overlay", "PIP_IMAGE": "overlay",
+    "KEYWORD_CAPTION": "overlay", "TITLE_GIANT": "overlay", "SIDE_TITLES": "overlay", "STAT_STICKER": "overlay",
+    "OBJECT_LABEL": "overlay", "EMOJI_STACK": "overlay", "INFOGRAPHIC": "overlay", "SPLIT_SOCIAL": "overlay",
+    "TEXT_CENTER": "overlay", "SPOTLIGHT_ROW": "overlay", "SPLIT_UI": "overlay",
+    "MUSIC_IN": "audio",
 }
 fam = lambda t: FAM.get(t, "scene")
 
@@ -38,8 +47,8 @@ def match(pred, ref, key):
 
 
 def main():
-    pred = load(sys.argv[1] if len(sys.argv) > 1 else ROOT / "analysis" / "backtest.csv")
-    ref = load(sys.argv[2] if len(sys.argv) > 2 else ROOT / "kb" / "ref01_events.csv")
+    pred = load(sys.argv[1] if len(sys.argv) > 1 else OUT / "backtest.csv")
+    ref = load(sys.argv[2] if len(sys.argv) > 2 else EVENTS)
     print(f"предсказано {len(pred)}, эталон {len(ref)}, допуск ±{TOL} с\n")
     print(f"{'уровень':8s} {'совп.':>5s} {'precision':>9s} {'recall':>7s} {'F1':>5s}")
     res = {}

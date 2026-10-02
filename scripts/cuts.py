@@ -17,10 +17,9 @@ from pathlib import Path
 
 import numpy as np
 
+from refcfg import FPS, OUT, SRC
+
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "reference" / "ref01.mp4"
-OUT = ROOT / "analysis"
-FPS = 2997 / 100
 CUT_T = 0.10      # порог scene score для склейки
 MIN_GAP = 6       # кадров между склейками (не считать двойные срабатывания на переходах)
 
