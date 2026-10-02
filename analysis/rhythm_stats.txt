@@ -1,0 +1,64 @@
+Частота приёмов:
+  TR_RING                    8
+  ZOOM_PUSH                  7
+  TR_ZOOMBLUR                7
+  TITLE_KINETIC              6
+  CUT_PUNCH_IN               4
+  TR_XSTAMP                  4
+  SCENE_GREY_ILLUSTRATION    2
+  CUT_PUNCH_OUT              2
+  ICON_POP                   2
+  CUT_HARD                   2
+  SCENE_GREY_CARDS           2
+  ZOOM_PULL                  2
+  MUSIC_IN                   1
+  SCENE_DARK_CHART           1
+  SCENE_GREY_COMPARE         1
+  SCENE_DARK_QUOTE           1
+  GRADE_BW                   1
+  ICON_DRAW                  1
+  SCENE_DARK_MASCOT          1
+  SPLIT_UI                   1
+
+Визуальных событий 55, средний интервал 2.23 с, медиана 1.85 с, макс. пауза без событий 8.18 с
+    0- 10 с: 5 событий
+   10- 20 с: 6 событий
+   20- 30 с: 7 событий
+   30- 40 с: 5 событий
+   40- 50 с: 4 событий
+   50- 60 с: 5 событий
+   60- 70 с: 6 событий
+   70- 80 с: 3 событий
+   80- 90 с: 4 событий
+   90-100 с: 2 событий
+  100-110 с: 2 событий
+  110-120 с: 4 событий
+  120-130 с: 2 событий
+
+Графические сцены: 8 шт, 44.2 с (36%), длительность 2.57–8.18 с, медиана 5.87 с
+Спикер: 77.2 с; отрезки между сценами: 5.1, 3.5, 2.3, 10.4, 6.1, 18.0, 14.9, 8.8, 8.3
+
+Смещение «начало слова − момент события», мс (медиана [мин; макс]):
+  TITLE_KINETIC                 +89 [  -56;  +282]  n=6
+  ZOOM_PUSH                    +212 [  -74;  +918]  n=7
+  MUSIC_IN                      -24 [  -24;   -24]  n=1
+  TR_RING                       +75 [   +5;  +300]  n=8
+  TR_ZOOMBLUR                   +29 [  -42;   +84]  n=7
+  SCENE_GREY_ILLUSTRATION      +242 [ +168;  +316]  n=2
+  CUT_PUNCH_IN                  +95 [  +45;  +225]  n=4
+  TR_XSTAMP                     +58 [  +34;  +146]  n=4
+  SCENE_DARK_CHART              -64 [  -64;   -64]  n=1
+  SCENE_GREY_COMPARE           +416 [ +416;  +416]  n=1
+  CUT_PUNCH_OUT                 +67 [  +56;   +77]  n=2
+  ICON_POP                     +254 [ +176;  +332]  n=2
+  CUT_HARD                      +91 [  +50;  +132]  n=2
+  SCENE_GREY_CARDS             +477 [ +388;  +566]  n=2
+  SCENE_DARK_QUOTE               +2 [   +2;    +2]  n=1
+  ZOOM_PULL                    +205 [ +182;  +228]  n=2
+  GRADE_BW                      +38 [  +38;   +38]  n=1
+  SCENE_DARK_MASCOT            +186 [ +186;  +186]  n=1
+  SPLIT_UI                       +4 [   +4;    +4]  n=1
+ASL 0-30 с: 3.01 с (планов 11)
+ASL 30-60 с: 4.58 с (планов 6)
+ASL 60-90 с: 5.94 с (планов 6)
+ASL 90-122 с: 4.20 с (планов 6)

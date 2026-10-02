@@ -1,0 +1,35 @@
+предсказано 47, эталон 56, допуск ±0.5 с
+
+уровень  совп. precision  recall    F1
+ANY         40      0.85    0.71  0.78
+FAMILY      40      0.85    0.71  0.78
+EXACT       40      0.85    0.71  0.78
+
+среднее |Δt| точных совпадений: 71 мс
+
+Пропущено (эталон без точного совпадения):
+     5.07 TR_ZOOMBLUR              тебе
+     5.60 SCENE_GREY_ILLUSTRATION  предлагать
+    13.38 CUT_PUNCH_IN             бюджеты
+    13.45 TITLE_KINETIC            бюджеты
+    14.58 TR_XSTAMP                таргеты
+    14.70 SCENE_DARK_CHART         таргеты
+    17.82 TR_ZOOMBLUR              либо
+    22.69 TR_XSTAMP                есть
+    24.29 CUT_PUNCH_IN             котором
+    26.16 CUT_PUNCH_OUT            каждый
+    52.60 ICON_POP                 люди
+    54.90 TITLE_KINETIC            четкая
+    56.06 TR_RING                  они
+    60.53 CUT_PUNCH_IN             и
+    66.13 TITLE_KINETIC            тысячам
+    86.05 ZOOM_PUSH                садила
+
+Ложные/неточные (предсказание без точного совпадения):
+     3.89 TR_ZOOMBLUR              нечего
+     4.36 SCENE_GREY_ILLUSTRATION  нечего
+    16.69 CUT_PUNCH_IN             закупы
+    25.59 ZOOM_PULL                и
+    58.87 CUT_PUNCH_IN             вовремя
+   100.52 ZOOM_PUSH                сотней
+   102.55 ZOOM_PULL                и

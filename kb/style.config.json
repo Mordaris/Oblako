@@ -16,11 +16,12 @@
       "PUNCH": {"scale": 1.2, "ty_px": 45, "ty_range_px": [28, 60], "conf": "I"},
       "PUSH_PEAK": {"scale": 1.285, "ty_px": 30, "conf": "I"}
     },
-    "push":   {"from": 1.0,  "to": 1.285, "frames": 25, "frames_range": [23, 29], "easing": [0.34, 0.12, 0.11, 0.80], "end_on": "accent_word_start", "min_gap_s": 7.5, "hold_peak_s_max": 2.0, "conf": "I"},
+    "push":   {"from": 1.0,  "to": 1.285, "frames": 25, "frames_range": [23, 29], "easing": [0.34, 0.12, 0.11, 0.80], "start_offset_ms": -200, "min_gap_s": 7.0, "hold_peak_s_max": 2.0, "pull_after_s_if_no_event": 1.2, "conf": "I"},
     "pull":   {"from": 1.23, "to": 1.0,   "frames": 35, "frames_range": [34, 36], "easing": [0.34, 0.36, 0.66, 0.92], "conf": "I"},
     "settle": {"from_range": [1.15, 1.38], "to": "WIDE|PUNCH", "frames": 3, "easing": [0.0, 0.0, 0.2, 1.0], "conf": "O"},
     "max_static_s": 5.3,
-    "punch_alternation_s": [1.7, 2.5]
+    "punch_only_if_static_s_over": 5.3,
+    "punch_hold_s": [0.9, 2.1]
   },
 
   "registers": {
