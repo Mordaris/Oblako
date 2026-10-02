@@ -1,0 +1,233 @@
+{
+ "meta": {
+  "name": "ref03-product-explainer-apple-style",
+  "profile": "C",
+  "source": "reference/ref03.mp4 — kb/01c-ref03-breakdown.md, kb/04-editing-grammar.md §3c",
+  "inherits": "kb/style.config.json (fps, resolution, safe_zones)",
+  "units": "px — для 1920x1080; frames — при 30 fps (референс 25 fps, пересчитано по мс)",
+  "confidence_legend": {
+   "I": "измерено скриптом",
+   "G": "покадровые листы",
+   "O": "оценка",
+   "R": "рекомендация"
+  }
+ },
+ "fps": 30,
+ "aspect_ratio": "16:9",
+ "resolution": {
+  "width": 1920,
+  "height": 1080
+ },
+ "camera": {
+  "levels": {
+   "WIDE": {
+    "scale": 1.0
+   },
+   "PUSH_PEAK": {
+    "scale": 1.3
+   }
+  },
+  "push": {
+   "from": 1.0,
+   "to": 1.3,
+   "main_frames": [
+    31,
+    38
+   ],
+   "main_to": 1.28,
+   "tail_ms": 700,
+   "easing": [
+    0.45,
+    0.09,
+    0.16,
+    0.73
+   ],
+   "start_offset_ms": [
+    -400,
+    -130
+   ],
+   "after_peak": "cut_to_WIDE",
+   "conf": "I"
+  },
+  "punch_cuts": false,
+  "enter_speaker_from_blur": {
+   "frames": [
+    4,
+    6
+   ],
+   "blur_px": [
+    20,
+    0
+   ],
+   "conf": "G"
+  },
+  "max_static_s": 5.3,
+  "max_static_cta_s": 7.5
+ },
+ "subtitles": {
+  "mode": "none"
+ },
+ "color_palette": {
+  "gradient_section": [
+   "#87D1F0",
+   "#92FAF8",
+   "#87FBE3"
+  ],
+  "ui_bg": "#DDDDDD",
+  "ui_card": "#000000",
+  "ui_title": "#F0D73E",
+  "highlighter": "#E09A01",
+  "highlighter_alt": "#EAA03F",
+  "text_primary": "#FFFFFF"
+ },
+ "typography": {
+  "font": "SF Pro (бесплатная замена: Inter, OFL)",
+  "HOOK_QUESTION": {
+   "weight": 700,
+   "position": "top",
+   "conf": "G"
+  },
+  "SECTION_CARD": {
+   "number": {
+    "weight": 700,
+    "opacity": 0.25,
+    "height_pct": 45
+   },
+   "title": {
+    "weight": 600,
+    "animation": "fade_blur_by_word"
+   },
+   "bg": "gradient_section",
+   "conf": "G"
+  },
+  "UI_NOTE_CARD": {
+   "style": "iOS Notes dark",
+   "title_color": "#F0D73E",
+   "items": "checkbox list",
+   "typewriter": "sync_speech",
+   "conf": "G"
+  },
+  "CAPTION_PLATE": {
+   "bg": "#FFFFFF",
+   "text": "#111111",
+   "weight": 700,
+   "shadow": true,
+   "position": "under_screenshot",
+   "conf": "G"
+  }
+ },
+ "transitions": {
+  "CUT": {
+   "lead_ms": [
+    40,
+    120
+   ]
+  },
+  "TR_FOCUS": {
+   "frames": [
+    4,
+    6
+   ],
+   "use_when": "возврат к спикеру после графики"
+  },
+  "TR_SCROLL": {
+   "frames": 8,
+   "direction": "vertical",
+   "motion_blur": true,
+   "use_when": "следующая точка таймлайна"
+  },
+  "light_transitions": false,
+  "beat_sync": false
+ },
+ "elements": {
+  "SCREEN_DOC_RAPID": {
+   "shot_frames": [
+    7,
+    19
+   ],
+   "slow_push_pct": [
+    3,
+    5
+   ],
+   "vignette": true,
+   "highlight": "highlighter",
+   "use_when": "много источников",
+   "conf": "I"
+  },
+  "TOC_CARDS": {
+   "grid": "2x2",
+   "in": "blur_to_sharp",
+   "frames": 6,
+   "one_per_item": true,
+   "conf": "G"
+  },
+  "PRICE_TIMELINE": {
+   "items": [
+    "screenshot",
+    "caption_plate",
+    "highlighter_on_price"
+   ],
+   "between_points": "TR_SCROLL",
+   "conf": "G"
+  },
+  "SPLIT_SOCIAL": {
+   "cards": 2,
+   "radius_px": 36,
+   "bg": "#DDDDDD",
+   "conf": "G"
+  },
+  "CHECKLIST": {
+   "container": "UI_NOTE_CARD",
+   "item_lead_ms": [
+    -200,
+    100
+   ],
+   "conf": "G"
+  }
+ },
+ "density_limits": {
+  "visual_event_interval_s": {
+   "mean": 1.91,
+   "median": 1.71
+  },
+  "graphics_share_pct": [
+   40,
+   50
+  ],
+  "hook_first_30s": {
+   "asl_s": 1.34
+  },
+  "asl_overall_s": 1.97
+ },
+ "audio": {
+  "ref_integrated_lufs": -13.4,
+  "target_integrated_lufs": -14,
+  "wpm_ref": 188,
+  "pauses_max_ms": 340,
+  "beat_sync_cuts": false
+ },
+ "sfx_library_mapping": {
+  "_note": "не измерены; описания — профиль A, плюс:",
+  "TOC_CARDS": {
+   "sound": "soft UI tap",
+   "duration_ms": 80,
+   "level_db": -22,
+   "attack": "на 1-м кадре карточки"
+  },
+  "CHECKLIST": {
+   "sound": "keyboard typing light",
+   "duration_ms": "по длине печати",
+   "level_db": -26
+  },
+  "TR_SCROLL": {
+   "sound": "short swipe",
+   "duration_ms": 200,
+   "level_db": -22
+  },
+  "SCREEN_DOC_RAPID": {
+   "sound": "camera shutter / tick на каждую склейку",
+   "duration_ms": 60,
+   "level_db": -24
+  }
+ }
+}

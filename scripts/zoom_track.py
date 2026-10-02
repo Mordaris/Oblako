@@ -20,6 +20,7 @@ from refcfg import FPS, OUT, SRC
 ROOT = Path(__file__).resolve().parent.parent
 W, H = 640, 360
 MIN_INL = 40
+REF_T = float(__import__("os").environ.get("ZOOM_REF_T", "0"))   # время эталонного общего плана, с
 
 
 def frames():
@@ -40,9 +41,12 @@ def main():
     rows = []
     for i, f in enumerate(frames()):
         kp, des = orb.detectAndCompute(f, None)
-        if i == 0:
+        if ref_des is None:
+            if i < int(REF_T * FPS):
+                rows.append([i, f"{i / FPS:.3f}", "", "", "", 0])
+                continue
             ref_kp, ref_des = kp, des
-            rows.append([0, "0.000", "1.0000", "0.0", "0.0", len(kp)])
+            rows.append([i, f"{i / FPS:.3f}", "1.0000", "0.0", "0.0", len(kp)])
             continue
         row = [i, f"{i / FPS:.3f}", "", "", "", 0]
         if des is not None and len(kp) > 50:

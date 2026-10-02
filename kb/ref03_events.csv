@@ -1,0 +1,30 @@
+t,technique,word,function,note,t_end
+0.0,TR_FOCUS,эпл,hook_keyword,вход в спикера из расфокуса 5 кадров,
+0.0,TITLE_GIANT,эпл,main_question,«Apple это развод?» сверху на спикере,
+1.48,SCREEN_DOC,разводов,evidence,монтаж 11 заголовков СМИ по 6–16 кадров; «Apple» выделено жёлтым маркером,5.56
+5.56,BROLL_FULL,развод,illustration,сайт Apple с курсором → 9:41 → распаковка → камера iPhone («как продают и обслуживают»),7.6
+7.6,TOC_CARDS,сегодня,chapter,iOS-заметки 2×2 = оглавление 4 «разводов»; карточка на пункт,10.84
+8.6,TOC_CARDS,четыре,enumeration,2-я карточка,
+9.2,TOC_CARDS,где,enumeration,3-я карточка,
+9.8,TOC_CARDS,каждый,enumeration,4-я карточка,
+10.84,CUT_HARD,главное,exit_illustration,-> спикер общий,
+12.6,ZOOM_PUSH,платить,promise,1.00->1.30 ~45f ease-out (основная часть 26f до 1.27),
+15.04,CHAPTER_CARD,развод,chapter,пастельный градиент + прозрачная «1» + «Ценник в день старта»,17.0
+17.0,TR_FOCUS,айфон,exit_illustration,спикер из расфокуса 3 кадра,
+17.8,PRICE_TIMELINE,семнадцать,statistic,скрин карточки товара + плашка «В день выхода» + цена жёлтым маркером,25.16
+19.2,HIGHLIGHT,двести,statistic,цена подсвечена жёлтым,
+19.85,TR_SCROLL,через,transition,вертикальный скролл по пунктиру-таймлайну -> «Через 2 месяца»,
+21.75,TR_SCROLL,через,transition,-> «Через 6 месяцев»,
+23.45,TR_SCROLL,через,transition,-> «Через 12 месяцев»,
+25.16,CUT_HARD,переплатил,exit_illustration,-> спикер общий (вывод лицом),
+29.08,SPLIT_SOCIAL,инстаграме,irony,2 вертикальных рилса-анбоксинга в скруглённых карточках,32.08
+32.08,CHAPTER_CARD,развод,chapter,«2» + «Продажа IPhone»,34.08
+34.08,TR_FOCUS,вы,exit_illustration,спикер из расфокуса,
+39.32,SCREEN_DOC,выставляете,evidence,скрин объявления Авито 70 000 ₽,40.76
+40.76,CUT_HARD,месяц,exit_illustration,-> спикер общий,
+45.55,ZOOM_PUSH,тому,accent_peak,1.00->1.30 ~40f ease-out,
+48.2,CUT_PUNCH_OUT,работает,contrast,1.30->1.00 «трейдин работает иначе»,
+49.32,CHECKLIST,никаких,solution,iOS-заметка «Trade-in»: пункты печатаются синхронно речи,53.56
+50.0,CHECKLIST,встреч,solution,«Без встреч»,
+51.4,CHECKLIST,сумма,solution,«Сумма идёт в счёт нового устройства»,
+53.56,CUT_HARD,у,cta,-> спикер общий 7.4 с — оффер магазина,

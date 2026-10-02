@@ -83,7 +83,7 @@ def plan(ws):
         if pull_at is not None:
             if last_event > pull_at - 1.2 - PUSH_S + 0.25:   # после наезда было другое событие -> отъезд не нужен
                 pull_at = None
-            if t >= pull_at:
+            if pull_at is not None and t >= pull_at:
                 if not in_scene:
                     add(pull_at, "ZOOM_PULL", i, "release"); last_event = pull_at
                 pull_at = None
