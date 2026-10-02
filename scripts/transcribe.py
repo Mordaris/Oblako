@@ -89,11 +89,13 @@ def main():
         rec.decode_stream(s)
         r = s.result
         words, cur = [], None
-        for tok, t in zip(r.tokens, r.timestamps):
-            if tok.startswith("▁") or cur is None:
+        for tok, t in zip(r.tokens, r.timestamps):  # токены GigaAM — буквы, граница слова — токен " "
+            if not tok.strip():
                 if cur:
                     words.append(cur)
-                cur = {"w": tok.lstrip("▁"), "start": round(t0 + t, 3)}
+                cur = None
+            elif cur is None:
+                cur = {"w": tok, "start": round(t0 + t, 3)}
             else:
                 cur["w"] += tok
         if cur:
