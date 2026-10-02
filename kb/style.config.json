@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "name": "ref01-expert-longform",
+    "source": "reference/ref01.mp4 — разбор kb/01-reference-breakdown.md, правила kb/02-design-system.md",
+    "units": "px — для 1920x1080; frames — при 30 fps; ms — миллисекунды",
+    "confidence_legend": {"I": "измерено скриптом", "G": "покадровые листы", "O": "оценка", "R": "рекомендация, в референсе не измерено"}
+  },
+  "fps": 30,
+  "aspect_ratio": "16:9",
+  "resolution": {"width": 1920, "height": 1080},
+  "engine": {"primary": "hyperframes", "fallback": "remotion"},
+
+  "camera": {
+    "levels": {
+      "WIDE": {"scale": 1.0, "ty_px": 0, "conf": "I"},
+      "PUNCH": {"scale": 1.2, "ty_px": 45, "ty_range_px": [28, 60], "conf": "I"},
+      "PUSH_PEAK": {"scale": 1.285, "ty_px": 30, "conf": "I"}
+    },
+    "push":   {"from": 1.0,  "to": 1.285, "frames": 25, "frames_range": [23, 29], "easing": [0.34, 0.12, 0.11, 0.80], "end_on": "accent_word_start", "min_gap_s": 7.5, "hold_peak_s_max": 2.0, "conf": "I"},
+    "pull":   {"from": 1.23, "to": 1.0,   "frames": 35, "frames_range": [34, 36], "easing": [0.34, 0.36, 0.66, 0.92], "conf": "I"},
+    "settle": {"from_range": [1.15, 1.38], "to": "WIDE|PUNCH", "frames": 3, "easing": [0.0, 0.0, 0.2, 1.0], "conf": "O"},
+    "max_static_s": 5.3,
+    "punch_alternation_s": [1.7, 2.5]
+  },
+
+  "registers": {
+    "SPEAKER":         {"grade": "color", "subtitles": "SUB"},
+    "SPEAKER_BW":      {"grade": "saturation_0", "subtitles": "SUB", "enter": "CUT", "exit": "TR_RING.B"},
+    "GREY_STUDIO":     {"bg_center": "#A7A7A7", "bg_corner": "#5A5A5A", "foreground_blur_objects": [2, 3], "camera_drift": "slow", "subtitles": "SUB", "scene_s": [2.5, 8.2], "new_element_every_s_max": 2.5},
+    "GREY_STUDIO_DIM": {"inherits": "GREY_STUDIO", "subtitles": "SUB_DIM"},
+    "DARK_GRID":       {"bg": "#101010", "grid_line_px": 2, "grid_distortion": "barrel", "chromatic_aberration_px": [2, 3], "film_grain": true, "subtitles": "none", "center_words": ["Q_RED", "Q_WHITE"]},
+    "SPLIT_UI":        {"speaker_scale": 1.2, "speaker_tx_px": -477, "ui_panel_width_pct": 30, "subtitles": "SUB"}
+  },
+
+  "color_palette": {
+    "text_primary": "#F5F5F5",
+    "text_gradient_bottom": "#D9D9D9",
+    "text_dim": "#3A3A3A",
+    "accent_money_target": "#20D44A",
+    "accent_money_target_alt": "#36C43A",
+    "accent_object": "#ECE227",
+    "accent_object_shadow": "#D5CA1E",
+    "accent_product": "#FF6A1F",
+    "danger_triangle": "#FF6258",
+    "danger_quote": "#EF0004",
+    "infographic_teal": "#3BC5C5",
+    "growth_gradient": ["#D22D19", "#D17519", "#D1D311", "#79D236", "#53D214"],
+    "grey_studio_wall": "#A7A7A7",
+    "dark_grid_bg": "#101010",
+    "xstamp_core": "#FBBD8B",
+    "xstamp_glow": "#C8E040",
+    "accent_rules": {
+      "green": "деньги, бюджет, целевая потребность",
+      "yellow": "объект или категория, выделение",
+      "red": "только боль клиента и ошибка",
+      "orange": "только собственный продукт"
+    }
+  },
+
+  "typography": {
+    "fonts": {
+      "grotesk_wide": {"family": "Unbounded", "cap_height_ratio": 0.75, "file": "kb/fonts/Unbounded-VF.ttf", "axes": {"wght": [200, 900]}, "license": "OFL-1.1", "replaces": "широкий геометрический гротеск референса", "compensation": {"tracking_pct": 2}},
+      "script": {"family": "Marck Script", "file": "kb/fonts/MarckScript-Regular.ttf", "license": "OFL-1.1", "replaces": "рукописный акцент референса", "compensation": {"skewX_deg": -6}}
+    },
+    "styles": {
+      "SUB":      {"font": "grotesk_wide", "weight": 900, "case": "upper", "cap_height_px": 63, "font_size_px": 84, "tracking_pct": 1, "line_height": 1.0, "color": "#F5F5F5", "gradient_to": "#D9D9D9", "shadow": "0 4px 12px rgba(0,0,0,0.55)", "position": {"anchor": "bottom-center", "top_y_px": 963, "recommended_top_y_px": 900}, "words_per_card": [1, 2], "lead_ms": 90, "transition": "instant", "conf": "I"},
+      "SUB_DIM":  {"inherits": "SUB", "color": "#3A3A3A", "gradient_to": null, "glow": "0 0 6px rgba(255,255,255,0.5)", "conf": "O"},
+      "T_BLACK":  {"font": "grotesk_wide", "weight": 900, "case": "upper", "cap_height_px": 54, "font_size_px": 72, "tracking_pct": 2, "color": "#FFFFFF", "shadow": "0 3px 10px rgba(0,0,0,0.45)", "conf": "I"},
+      "T_REG":    {"font": "grotesk_wide", "weight": 400, "case": "upper", "cap_height_px": 50, "font_size_px": 67, "cap_height_small_px": 38, "font_size_small_px": 51, "tracking_pct": 3, "color": "#FFFFFF", "shadow": "0 3px 10px rgba(0,0,0,0.45)", "conf": "G"},
+      "T_SCRIPT": {"font": "script", "weight": 400, "case": "lower", "glyph_height_px": 60, "glow": ["0 0 4px {color}", "0 0 18px {color}B3"], "color_by": "accent_rules", "conf": "I"},
+      "Q_RED":    {"font": "grotesk_wide", "weight": 900, "case": "upper", "cap_height_px": 88, "color": "#EF0004", "glow": "0 0 20px #EF000499", "rgb_split_px": 3, "position": "center", "conf": "O"},
+      "Q_WHITE":  {"font": "grotesk_wide", "weight": 900, "case": "upper", "cap_height_px": 88, "color": "#FFFFFF", "stroke": "3px #1A1A1A", "position": "center", "conf": "O"},
+      "LABEL":    {"title": {"font": "grotesk_wide", "weight": 900, "size_px": 26, "color": "#FFFFFF"}, "sub": {"font": "script", "size_px": 33, "color": "#6E6E6E"}, "conf": "O"}
+    },
+    "title_layout": {
+      "zone_px": {"x": [60, 780], "y": [300, 560]},
+      "align": "left",
+      "lines": [2, 3],
+      "script_words_per_title": 1,
+      "hide_subtitles_while_visible": true,
+      "optional_emoji_3d": true
+    },
+    "safe_zones_px": {"text_max_y": 850, "text_max_x": 1700, "face": "no_overlay"}
+  },
+
+  "transitions": {
+    "TR_RING": {
+      "type": "overlay_light_leak", "blend": "screen",
+      "duration_frames": 10, "duration_ms": 333, "cut_after_frame": 4,
+      "variants": {"A": "белая вспышка + вращающееся энергетическое кольцо + хром-полосы", "B": "цветной film burn: розовый/бирюзовый/оранжевый"},
+      "post_cut_camera": "WIDE",
+      "use_when": "граница смыслового блока, поворот темы",
+      "evidence_s": [2.236, 11.111, 43.043, 56.056, 67.968, 73.674, 96.2, 119.25], "conf": "G"
+    },
+    "TR_ZOOMBLUR": {
+      "in":  {"frames": [2, 5], "scale_delta": [0.12, 0.27], "blur_px": [0, 40], "blur_type": "radial", "easing": [0.55, 0.0, 1.0, 0.45]},
+      "out": {"frames": [3, 4], "settle": "camera.settle", "blur_px": [40, 0], "easing": [0.0, 0.0, 0.2, 1.0]},
+      "duration_frames": 9, "duration_ms": 300,
+      "use_when": "фраза продолжается, меняется только картинка (вход/выход иллюстрации)",
+      "evidence_s": [5.072, 17.818, 20.12, 49.983, 88.59, 104.97, 113.146], "conf": "G"
+    },
+    "TR_XSTAMP": {
+      "type": "overlay_brush_x", "size_pct_height": 35, "core": "#FBBD8B", "glow": "#C8E040", "glow_radius_px": 60,
+      "timeline_frames": {"appear": 1, "hold_before_cut": 2, "hold_after_cut": 2, "exit": 1, "exit_direction": "up-right"},
+      "duration_frames": 6, "duration_ms": 200,
+      "use_when": "жёсткая смена регистра: вход в DARK_GRID/SPLIT_UI, закрытие неверной стратегии",
+      "evidence_s": [14.58, 22.69, 45.913, 120.85], "conf": "G"
+    },
+    "CUT_HARD":      {"use_when": "продолжение перечисления без паузы", "evidence_s": [33.066, 39.84]},
+    "CUT_PUNCH_IN":  {"to": "PUNCH", "use_when": "термин, новый тезис, ритм спикера", "evidence_s": [13.38, 24.291, 60.527, 118.39]},
+    "CUT_PUNCH_OUT": {"to": "WIDE", "use_when": "противительная связка, сброс", "evidence_s": [26.159, 62.596]},
+    "cut_lead_frames": [1, 3],
+    "min_gap_between_transitions_s": 2.3,
+    "beat_sync": false
+  },
+
+  "elements": {
+    "TITLE_KINETIC_LINE": {"in": {"props": {"opacity": [0, 1], "blur_px": [12, 0]}, "frames": 7, "easing": [0.25, 0.1, 0.25, 1.0]}, "out": "with_scene", "lead_frames": 3},
+    "T_SCRIPT_WORD":      {"in": {"props": {"opacity": [0, 1], "blur_px": [8, 0], "glow_pct": [0, 120, 100]}, "frames": 4}, "lead_frames": 5},
+    "ICON_POP":           {"in": {"props": {"scale": [0, 1.08, 1.0], "opacity": [0, 1]}, "frames": 4, "easing": "back.out(1.7)"}, "out": {"props": {"opacity": [1, 0]}, "frames": 3, "trigger": "next_push_or_cut"}, "lead_frames": [5, 8], "max_simultaneous": 4},
+    "ICON_DRAW":          {"in": {"stroke_draw_frames": 9, "inner_text_fade_frames": 6}, "out": {"props": {"opacity": [1, 0]}, "frames": 9}, "lead_frames": 4},
+    "SILHOUETTE":         {"in": {"props": {"y_px": [400, 0]}, "frames": [12, 15], "easing": [0.16, 1.0, 0.3, 1.0]}, "accumulate_max": 5, "lead_frames": [-8, 10]},
+    "ICON_GRID":          {"in": {"props": {"scale": [0.85, 1.0], "opacity": [0, 1]}, "frames": 6}, "layout": "3+2 centered", "lead_frames": [3, 8], "hide_subtitles": true},
+    "CARD_BROLL":         {"radius_px": 24, "shadow": "0 12px 32px rgba(0,0,0,0.35)", "first_in": {"props": {"opacity": [0, 1], "blur_px": [10, 0], "scale": [0.8, 1.0]}, "frames": 6}, "next_in": {"props": {"x": "from_right", "rotateY_deg": [30, 0]}, "frames": 22, "easing": [0.42, 0.0, 0.58, 1.0]}, "out": {"props": {"x": "to_left", "opacity": [1, 0]}, "frames": 8}, "dissolve_dust_frames": 22, "lead_frames": [12, 17]},
+    "CHART_BARS":         {"grow_frames": 87, "stagger_frames": 6, "easing": [0.0, 0.0, 0.2, 1.0], "colors": "color_palette.growth_gradient"},
+    "ERROR_FX":           {"typewriter_frames": 6, "triangle_fade_frames": 3, "red_tint": {"to_pct": 35, "frames": 6}, "rgb_glitch_frames": [8, 10]},
+    "Q_WORD":             {"in": {"motion_blur_x_frames": [1, 2]}, "lead_frames": [0, 3]},
+    "MASCOT":             {"in": {"props": {"scale": [0.4, 1.0]}, "frames": 4, "easing": "back.out(1.7)"}, "idle": "animated_expressions"},
+    "GRADE_BW":           {"in": "cut", "out": "TR_RING.B", "music_stop_before_cut_s": [0.3, 2.0]}
+  },
+
+  "density_limits": {
+    "visual_event_interval_s": {"mean": 2.2, "median": 1.85},
+    "max_static_on_speaker_s": 5.3,
+    "graphics_share_pct": [30, 40],
+    "hook_first_30s": {"asl_s": 3.0, "min_events": 15},
+    "middle_asl_s": [4.5, 6.0],
+    "on_speaker_max": {"titles": 1, "title_lines": 3, "icons": 4, "title_plus_icons": 2},
+    "accent_colors_per_speaker_frame": 2,
+    "subtitles_with_title": false
+  },
+
+  "audio": {
+    "music": {"style": "сплошная бит-подложка ~140 BPM с плотным саб-басом", "start": "first_hook_keyword", "start_delay_s_ref": 0.94, "sub_under_voice_db": [-3, -2], "mid_under_voice_db": [-22, -18], "beat_sync_cuts": false, "conf": "I/R"},
+    "voice": {"pauses_max_ms": 160, "wpm_ref": 162, "conf": "I"},
+    "loudness": {"ref_integrated_lufs": -23.6, "target_integrated_lufs": -14, "true_peak_dbtp": -1, "conf": "I/R"}
+  },
+
+  "sfx_library_mapping": {
+    "_note": "В референсе SFX не измерены (речь их маскирует). Ниже — описания-рекомендации (R), без файлов. Уровень — относительно пикового уровня голоса.",
+    "TR_RING":        {"sound": "whoosh + shimmer-хвост", "duration_ms": 450, "spectrum": "широкополосный шум 200 Гц–12 кГц, свип фильтра вверх", "level_db": -16, "attack": "за 4 кадра до склейки, пик на склейке"},
+    "TR_ZOOMBLUR":    {"sound": "короткий swoosh + sub-impact", "duration_ms": 250, "spectrum": "ВЧ-шум 1–10 кГц + удар 50–70 Гц", "level_db": -15, "attack": "на склейке"},
+    "TR_XSTAMP":      {"sound": "резкий brush-swipe / stamp hit", "duration_ms": 200, "spectrum": "транзиент 2–8 кГц + низ 80 Гц", "level_db": -14, "attack": "на 1-м кадре X"},
+    "CUT_PUNCH_IN":   {"sound": "нет (или очень тихий click)", "duration_ms": 40, "spectrum": "3–6 кГц", "level_db": -28, "attack": "на склейке"},
+    "ZOOM_PUSH":      {"sound": "мягкий riser / air swell", "duration_ms": 800, "spectrum": "шум с фильтром 500→6000 Гц", "level_db": -24, "attack": "вместе со стартом наезда"},
+    "TITLE_KINETIC":  {"sound": "soft whoosh-in", "duration_ms": 250, "spectrum": "2–10 кГц", "level_db": -20, "attack": "на 1-м кадре строки"},
+    "T_SCRIPT":       {"sound": "sparkle/shimmer", "duration_ms": 300, "spectrum": "4–12 кГц", "level_db": -22, "attack": "на 1-м кадре слова"},
+    "ICON_POP":       {"sound": "pop/bubble", "duration_ms": 100, "spectrum": "400–2000 Гц", "level_db": -16, "attack": "на 1-м кадре"},
+    "ICON_DRAW":      {"sound": "swipe/draw", "duration_ms": 300, "spectrum": "2–8 кГц", "level_db": -22, "attack": "со стартом штриха"},
+    "SILHOUETTE":     {"sound": "soft whoosh", "duration_ms": 300, "spectrum": "1–8 кГц", "level_db": -22, "attack": "со стартом выезда"},
+    "ICON_GRID":      {"sound": "tick/click", "duration_ms": 50, "spectrum": "2–5 кГц", "level_db": -20, "attack": "на 1-м кадре"},
+    "CARD_BROLL":     {"sound": "whoosh", "duration_ms": 400, "spectrum": "500 Гц–8 кГц", "level_db": -20, "attack": "со стартом въезда"},
+    "CARD_DISSOLVE":  {"sound": "sand/dust", "duration_ms": 700, "spectrum": "шум 3–12 кГц, затухание", "level_db": -18, "attack": "со стартом распада"},
+    "CHART_BARS":     {"sound": "riser", "duration_ms": 2800, "spectrum": "фильтр 200→6000 Гц", "level_db": -24, "attack": "со стартом роста"},
+    "ERROR_FX":       {"sound": "error buzz + glitch", "duration_ms": 400, "spectrum": "100–3000 Гц, square-тон", "level_db": -14, "attack": "на слове-вердикте"},
+    "DARK_GRID_ENTER":{"sound": "low hit", "duration_ms": 500, "spectrum": "50–70 Гц", "level_db": -14, "attack": "на склейке"},
+    "GRADE_BW":       {"sound": "стоп музыки 0,3–2 с перед склейкой + low swell", "duration_ms": 800, "spectrum": "<150 Гц", "level_db": -20, "attack": "на склейке"}
+  }
+}
