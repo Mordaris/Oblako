@@ -9,6 +9,7 @@ RNN-T модель) через sherpa-onnx; модели скачиваются 
 Запуск: python3 scripts/transcribe.py
 """
 import json
+import os
 import subprocess
 import urllib.request
 from pathlib import Path
@@ -19,7 +20,7 @@ import sherpa_onnx
 from refcfg import OUT, SRC
 
 ROOT = Path(__file__).resolve().parent.parent
-MODELS = Path("/home/user/models")
+MODELS = Path(os.environ.get("MODELS_DIR", Path.home() / ".cache" / "oblako-models"))   # вне репо; Linux/Mac
 REL = "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models"
 GIGA = "sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19"
 SR = 16000

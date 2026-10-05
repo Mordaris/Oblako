@@ -48,7 +48,7 @@ kb/style.config.json         Модуль 4 (+ style.config.yaml)
 
 ## Фаза 1 — Подготовка данных
 - [x] `scripts/cuts.py`: склейки по ffmpeg scene score (порог 0,10, локальный максимум, разнос ≥ 6 кадров) → `analysis/cuts.csv`, `shots.csv`, `scene_scores.csv`. Движение → `motion.csv`. Влёты графики и плавные переходы (разница кадров i−5 / i+5) → `events.csv`.
-- [x] `scripts/transcribe.py`: **вместо Whisper — GigaAM v2 (русская RNN-T) через sherpa-onnx + Silero VAD**, потому что huggingface.co закрыт сетью (403). Модели качаются из GitHub-релизов `k2-fsa/sherpa-onnx` в `/home/user/models` (вне репо, скрипт скачает сам). Результат: `analysis/transcript.json` (слова с таймкодами, шаг ~40 мс), `.srt`, `.txt`. Пунктуации нет.
+- [x] `scripts/transcribe.py`: **вместо Whisper — GigaAM v2 (русская RNN-T) через sherpa-onnx + Silero VAD**, потому что huggingface.co закрыт сетью (403). Модели качаются из GitHub-релизов `k2-fsa/sherpa-onnx` в `~/.cache/oblako-models` (или `$MODELS_DIR`; вне репо, скрипт скачает сам). Результат: `analysis/transcript.json` (слова с таймкодами, шаг ~40 мс), `.srt`, `.txt`. Пунктуации нет.
 - [x] `scripts/audio.py`: онсеты, RMS, центроид, полосы low/mid/high → `analysis/onsets.csv`, огибающие с шагом 100 мс → `bands.csv`.
 - [x] `scripts/sheets.sh START END FPS NAME [COLS ROWS TILE_W]`: контакт-листы с таймкодом `t` и номером кадра на тайле. `scripts/cut_sheet.sh`: пары «до | после» для каждой склейки.
 - [x] `scripts/run_all.sh`: вся фаза одной командой. Зависимости: `pip install sherpa-onnx librosa soundfile`.
